@@ -20,8 +20,8 @@ export default class BlockChallengeDecision extends Component {
     render() {
         return (
             <>
-                <p>{this.props.counterAction.source} is trying to block {this.props.prevAction.action} from {this.props.prevAction.source} as {this.props.counterAction.claim}</p>
-                <button onClick={() => this.vote(true)}>Challenge</button>
+                <p>{this.props.counterAction.source} está tentando bloquear {this.props.prevAction.action} from {this.props.prevAction.source} as {this.props.counterAction.claim}</p>
+                <button onClick={() => this.vote(true)}>EU DUVIDO</button>
                 {/* <button onClick={() => this.vote(false)}>Pass</button> */}
             </>
         )

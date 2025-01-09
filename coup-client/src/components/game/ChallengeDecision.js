@@ -22,13 +22,13 @@ export default class ChallengeDecision extends Component {
 
     challengeText = (action, source, target) => {
         if(action === 'steal') {
-            return <p><b>{source}</b> is trying to Steal from <b>{target}</b></p>
+            return <p><b>{source}</b> está tentando roubar de <b>{target}</b></p>
         }else if(action === 'tax') {
-            return <p><b>{source}</b> is trying to collect Tax (3 coins)</p>
+            return <p><b>{source}</b> está tentando cobrar impostos (3 coins)</p>
         }else if(action === 'assassinate') {
-            return <p><b>{source}</b> is trying to Assassinate <b>{target}</b></p>
+            return <p><b>{source}</b> está tentando assassinar <b>{target}</b></p>
         }else if(action === 'exchange') {
-            return <p><b>{source}</b> is trying to Exchange their influences</p>
+            return <p><b>{source}</b> está tentando trocar suas influências</p>
         }
     }
 

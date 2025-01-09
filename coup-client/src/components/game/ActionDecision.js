@@ -82,7 +82,7 @@ export default class ActionDecision extends Component {
             controls = <button onClick={() => this.deductCoins('coup')}>Coup</button>
         }
         return (<>
-            <p className="DecisionTitle">Choose an action</p>
+            <p className="DecisionTitle">Escolha uma Ação</p>
             <div className="DecisionButtonsContainer">
                {controls}
                <p>{this.state.actionError}</p>

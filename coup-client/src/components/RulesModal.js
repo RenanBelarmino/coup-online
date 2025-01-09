@@ -42,41 +42,44 @@ export default class RulesModal extends Component {
    
     <div className="RulesContainer">
         <div className="RulesContent">
-            <h2>Rules</h2>
-            <p>2-6 players</p>
-            <p>On your turn, you may choose an action to play. The action you choose may or may not correspond to the influences that you possess. 
-                For the action that you choose, other players may potentially block or challenge it. </p>
-            <p><b>Challenge</b>: When a player declares an action they are declaring to the rest of the players that they have a certain influence, 
-                and any other player can challenge it. When a player is challenged, the challenged player must reveal the correct influence 
-                associated with their action. If they reveal the correct influence, the challenger player will lose an influence. However, 
-                if they fail to reveal the correct influence the challenged player will lose their incorrectly revealed influence.</p>
-            <p><b>Block</b>: When the any of the actions "Foreign Aid", "Steal", and "Assasinate" are used, they can be blocked. Once again, 
-                any player can claim to have the correct influence to block. However, blocks can also be challenged by any player. If a block 
-                fails, the original action will take place.
-            </p>
-            <p>
-                If a player loses all their influences, they are out of the game. The last player standing wins!
-            </p>
-            <p>
-                At this time, if a player disconnects, the game must be recreated.
-            </p>
-            <h2>Influences</h2>
-            <h3>Captain</h3>
-            <p><b id="captain-color">STEAL</b>: Steal 2 coins from a target. Blockable by <hl id="captain-color">Captain</hl> or <hl id="ambassador-color">Ambassador</hl>. Can block <hl id="captain-color">STEAL</hl></p>
-            <h3>Assassin</h3>
-            <p><b id="assassin-color">ASSASSINATE</b>: Pay 3 coins to choose a target to assassinate (target loses an influence). Blockable by <hl id="contessa-color">Contessa</hl>.</p>
-            <h3>Duke</h3>
-            <p><b id="duke-color">TAX</b>: Collect 3 coins from the treasury. Not blockable. Can block Foreign Aid.</p>
-            <h3>Ambassador</h3>
-            <p><b id="ambassador-color">EXCHANGE</b>: Draw 2 influences into your hand and pick any 2 influences to put back. Not blockable. Can block <hl id="captain-color">STEAL</hl></p>
-            <h3>Contessa</h3>
-            <p><b id="contessa-color">BLOCK ASSASSINATION</b>: Can block <b id="assassin-color">assassinations</b>. Not blockable.</p>
-            <h3>Other Actions</h3>
-            <p><b>INCOME</b>: Collect 1 coins from the treasury.</p>
-            <p><b>FOREIGN AID</b>: Collect 2 coins from the treasury. Blockable by <hl id="duke-color">Duke</hl>.</p>
-            <p><b>COUP</b>: Pay 7 coins and choose a target to lose an influence. If a player starts their turn with 10 or more coins, they must Coup. Not Blockable.</p>
+            <h2>Regras</h2>
+            <p>2-6 jogadores</p>
+            <p>Em seu turno, você pode escolher uma ação para jogar. A ação escolhida pode ou não corresponder às influências que você possui. 
+                Para a ação escolhida, outros jogadores podem potencialmente bloqueá-la ou desafiá-la.</p>
+            <p><b>Desafio</b>: Quando um jogador declara uma ação, ele está declarando aos outros jogadores que possui uma certa influência, 
+                e qualquer outro jogador pode desafiá-lo. Quando desafiado, o jogador deve revelar a influência correta associada à ação. 
+                Se ele revelar a influência correta, o jogador que desafiou perde uma influência. No entanto, 
+                se ele não conseguir revelar a influência correta, ele perde a influência incorreta revelada.</p>
+            <p><b>Bloqueio</b>: Quando as ações "Ajuda Estrangeira", "Roubar" e "Assassinar" são usadas, elas podem ser bloqueadas. Novamente, 
+                qualquer jogador pode alegar ter a influência correta para bloquear. No entanto, os bloqueios também podem ser desafiados por qualquer jogador. 
+                Se o bloqueio falhar, a ação original ocorrerá.</p>
+            <p>Se um jogador perder todas as suas influências, ele está fora do jogo. O último jogador restante vence!</p>
+            <p>No momento, se um jogador se desconectar, o jogo deve ser recriado.</p>
+
+            <h2>Influências</h2>
+            <h3>Capitão</h3>
+            <p><b id="captain-color">ROUBAR</b>: Roube 2 moedas de um alvo. Pode ser bloqueado por <hl id="captain-color">Capitão</hl> ou <hl id="ambassador-color">Embaixador</hl>. Pode bloquear <hl id="captain-color">ROUBAR</hl>.</p>
+            
+            <h3>Assassino</h3>
+            <p><b id="assassin-color">ASSASSINAR</b>: Pague 3 moedas para escolher um alvo para assassinar (o alvo perde uma influência). 
+                Pode ser bloqueado por <hl id="contessa-color">Condessa</hl>.</p>
+            
+            <h3>Duque</h3>
+            <p><b id="duke-color">TAXAR</b>: Coleta 3 moedas do tesouro. Não pode ser bloqueado. Pode bloquear Ajuda Estrangeira.</p>
+            
+            <h3>Embaixador</h3>
+            <p><b id="ambassador-color">TROCAR</b>: Compre 2 influências para sua mão e escolha 2 influências para devolver. Não pode ser bloqueado. Pode bloquear <hl id="captain-color">ROUBAR</hl>.</p>
+            
+            <h3>Condessa</h3>
+            <p><b id="contessa-color">BLOQUEAR ASSASSINATO</b>: Pode bloquear <b id="assassin-color">assassinatos</b>. Não pode ser bloqueado.</p>
+
+            <h3>Outras Ações</h3>
+            <p><b>RECEITA</b>: Coleta 1 moeda do tesouro.</p>
+            <p><b>AJUDA ESTRANGEIRA</b>: Coleta 2 moedas do tesouro. Pode ser bloqueada por <hl id="duke-color">Duque</hl>.</p>
+            <p><b>GOLPE</b>: Pague 7 moedas e escolha um alvo para perder uma influência. Se um jogador começar seu turno com 10 ou mais moedas, ele deve realizar um Golpe. Não pode ser bloqueado.</p>
         </div>
     </div>
+
     </ReactModal>
         if(this.props.home) {
             return(

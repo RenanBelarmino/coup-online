@@ -5,7 +5,7 @@ export default class EventLog extends Component {
     render() {
         return (
             <div className="EventLogContainer">
-                <p className="bold EventLogTitle">Event Log</p>
+                <p className="bold EventLogTitle">Historico</p>
                 <div className="EventLogBody">
                    {this.props.logs.map((x, index) => {
                         if(index === this.props.logs.length-1){
